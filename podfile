@@ -1,0 +1,12 @@
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+use_modular_headers!
+
+platform :ios, '13.0'
+target 'TikTok' do
+
+pod 'FBSDKCoreKit', '~> 16.1.3'
+pod 'FBSDKLoginKit', '~> 16.1.3'
+pod 'GoogleSignIn', '~> 7.0.0'
+
+
+end
