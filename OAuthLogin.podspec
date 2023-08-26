@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   spec.name         = "OAuthLogin"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "第三方登录集成框架"
   spec.description  = "这是一个第三方登录集成框架，支持Google、Facebook等平台授权登录"
 
@@ -34,10 +34,9 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "OAuthLogin/**/*.{h,m}"
 
-  # spec.public_header_files = "Classes/**/*.h"
+  spec.public_header_files = "OAuthLogin/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

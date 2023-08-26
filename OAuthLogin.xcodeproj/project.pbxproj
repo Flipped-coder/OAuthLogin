@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35B0191E2A9A084F00EBE695 /* OAuthLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B0191D2A9A084F00EBE695 /* OAuthLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35B019282A9A1EFC00EBE695 /* DJLoginConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B019262A9A1EFC00EBE695 /* DJLoginConfig.h */; };
+		35B019292A9A1EFC00EBE695 /* DJLoginConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B019272A9A1EFC00EBE695 /* DJLoginConfig.m */; };
+		35B0192C2A9A228900EBE695 /* DJLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 35B0192A2A9A228900EBE695 /* DJLogin.h */; };
+		35B0192D2A9A228900EBE695 /* DJLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B0192B2A9A228900EBE695 /* DJLogin.m */; };
+		D441F08743A6B1DE51E157C0 /* libPods-OAuthLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFE4720E7BD9DC0EA9088ED /* libPods-OAuthLogin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2053BE404E8DFC9B66FC218F /* Pods-OAuthLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthLogin.debug.xcconfig"; path = "Target Support Files/Pods-OAuthLogin/Pods-OAuthLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		35B0191A2A9A084F00EBE695 /* OAuthLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35B0191D2A9A084F00EBE695 /* OAuthLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthLogin.h; sourceTree = "<group>"; };
+		35B019262A9A1EFC00EBE695 /* DJLoginConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJLoginConfig.h; sourceTree = "<group>"; };
+		35B019272A9A1EFC00EBE695 /* DJLoginConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJLoginConfig.m; sourceTree = "<group>"; };
+		35B0192A2A9A228900EBE695 /* DJLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJLogin.h; sourceTree = "<group>"; };
+		35B0192B2A9A228900EBE695 /* DJLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJLogin.m; sourceTree = "<group>"; };
+		35B0192E2A9A229B00EBE695 /* OAuthLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthLogin.h; sourceTree = "<group>"; };
+		529A355525B0799019601B5A /* Pods-OAuthLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthLogin.release.xcconfig"; path = "Target Support Files/Pods-OAuthLogin/Pods-OAuthLogin.release.xcconfig"; sourceTree = "<group>"; };
+		6BFE4720E7BD9DC0EA9088ED /* libPods-OAuthLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OAuthLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D441F08743A6B1DE51E157C0 /* libPods-OAuthLogin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09CC3505A81845625E5E0E47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BFE4720E7BD9DC0EA9088ED /* libPods-OAuthLogin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		35B019102A9A084F00EBE695 = {
 			isa = PBXGroup;
 			children = (
 				35B0191C2A9A084F00EBE695 /* OAuthLogin */,
 				35B0191B2A9A084F00EBE695 /* Products */,
+				915F7FBFC1FA353FBB1835CC /* Pods */,
+				09CC3505A81845625E5E0E47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,9 +67,38 @@
 		35B0191C2A9A084F00EBE695 /* OAuthLogin */ = {
 			isa = PBXGroup;
 			children = (
-				35B0191D2A9A084F00EBE695 /* OAuthLogin.h */,
+				35B019252A9A146900EBE695 /* Header */,
+				35B019242A9A146200EBE695 /* Classes */,
 			);
 			path = OAuthLogin;
+			sourceTree = "<group>";
+		};
+		35B019242A9A146200EBE695 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35B019272A9A1EFC00EBE695 /* DJLoginConfig.m */,
+				35B0192B2A9A228900EBE695 /* DJLogin.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		35B019252A9A146900EBE695 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				35B0192E2A9A229B00EBE695 /* OAuthLogin.h */,
+				35B019262A9A1EFC00EBE695 /* DJLoginConfig.h */,
+				35B0192A2A9A228900EBE695 /* DJLogin.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		915F7FBFC1FA353FBB1835CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2053BE404E8DFC9B66FC218F /* Pods-OAuthLogin.debug.xcconfig */,
+				529A355525B0799019601B5A /* Pods-OAuthLogin.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -57,7 +108,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35B0191E2A9A084F00EBE695 /* OAuthLogin.h in Headers */,
+				35B0192C2A9A228900EBE695 /* DJLogin.h in Headers */,
+				35B019282A9A1EFC00EBE695 /* DJLoginConfig.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,10 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35B019212A9A084F00EBE695 /* Build configuration list for PBXNativeTarget "OAuthLogin" */;
 			buildPhases = (
+				8538355F6C4CF09FE96518A4 /* [CP] Check Pods Manifest.lock */,
 				35B019152A9A084F00EBE695 /* Headers */,
 				35B019162A9A084F00EBE695 /* Sources */,
 				35B019172A9A084F00EBE695 /* Frameworks */,
 				35B019182A9A084F00EBE695 /* Resources */,
+				684F8BE30EE5FCF48F1BBEFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +178,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		684F8BE30EE5FCF48F1BBEFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OAuthLogin/Pods-OAuthLogin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OAuthLogin/Pods-OAuthLogin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OAuthLogin/Pods-OAuthLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8538355F6C4CF09FE96518A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OAuthLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35B019162A9A084F00EBE695 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B019292A9A1EFC00EBE695 /* DJLoginConfig.m in Sources */,
+				35B0192D2A9A228900EBE695 /* DJLogin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +351,9 @@
 		};
 		35B019222A9A084F00EBE695 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2053BE404E8DFC9B66FC218F /* Pods-OAuthLogin.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -283,7 +383,9 @@
 		};
 		35B019232A9A084F00EBE695 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529A355525B0799019601B5A /* Pods-OAuthLogin.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
