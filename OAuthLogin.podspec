@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   spec.name         = "OAuthLogin"
-  spec.version      = "0.0.2"
+  spec.version      = "0.1.3"
   spec.summary      = "第三方登录集成框架"
   spec.description  = "这是一个第三方登录集成框架，支持Google、Facebook等平台授权登录"
 
