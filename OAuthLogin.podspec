@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   spec.name         = "OAuthLogin"
-  spec.version      = "0.2.0"
+  spec.version      = "0.2.2"
   spec.summary      = "第三方登录集成框架"
   spec.description  = "这是一个第三方登录集成框架，支持Google、Facebook等平台授权登录"
 
@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.ios.deployment_target = '13.0'
+  spec.ios.deployment_target = '9.0'
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
